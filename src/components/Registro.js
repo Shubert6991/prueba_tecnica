@@ -28,7 +28,7 @@ function Registro() {
         // redirect to login
         console.log(res);
         setMessage(res.statusText);
-        setTimeout(() => navigate("/login", { replace: true }), 2000);
+        setTimeout(() => navigate("/prueba_tecnica/login", { replace: true }), 2000);
       })
       .catch((error) => setError(error.response.data.error));
   };

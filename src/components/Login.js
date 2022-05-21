@@ -22,7 +22,7 @@ function Login() {
         // add token to the session storage
         console.log(res);
         sessionStorage.setItem('token', res.data.token);
-        navigate("/", { replace: true });
+        navigate("/prueba_tecnica/", { replace: true });
       })
       .catch((error) => setError(error.response.data.error));
   };

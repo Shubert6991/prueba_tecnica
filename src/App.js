@@ -15,9 +15,9 @@ function App() {
         <Navbar />
         <div className="row my-4 justify-content-center ">
           <Routes>
-            <Route path="/" element={<Profile />} />
-            <Route path="/register" element={<Registro />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/prueba_tecnica" element={<Profile />} />
+            <Route path="/prueba_tecnica/register" element={<Registro />} />
+            <Route path="/prueba_tecnica/login" element={<Login />} />
           </Routes>
         </div>
       </BrowserRouter>

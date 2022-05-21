@@ -19,7 +19,7 @@ function Profile() {
   useEffect(() => {
     // check if user is logged
     let sessionToken = sessionStorage.getItem("token");
-    if (!sessionToken) navigate("/login", { replace: true });
+    if (!sessionToken) navigate("/prueba_tecnica/login", { replace: true });
     else {
       // get user info if is logged
       axios
@@ -143,20 +143,18 @@ function Profile() {
       </div>
 
       <div className="row justify-content-center mb-2">
-        <div className="card" style={{ width: "30rem", height: "40rem"}}>
+        <div className="card" style={{ width: "30rem", height: "40rem" }}>
           <div className="card-header bg-transparent">
             <h4>PDF</h4>
           </div>
           <div className="card-body">
-            <div className="ratio ratio-16x9" style={{height: "100%"}}>
-              <object data={pdf} type="application/pdf">
-                <iframe
-                  title="pdfViewer"
-                  src={`https://docs.google.com/viewer?url=${pdf}&embedded=true`}
-                  allowFullScreen
-                  style={{ width: "100%", height: "100%"}}
-                ></iframe>
-              </object>
+            <div className="ratio ratio-16x9" style={{ height: "100%" }}>
+              <iframe
+                title="pdfViewer"
+                src={`https://docs.google.com/viewer?url=${pdf}&embedded=true`}
+                allowFullScreen
+                style={{ width: "100%", height: "100%" }}
+              ></iframe>
             </div>
           </div>
         </div>
